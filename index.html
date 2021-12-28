@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
     <title>Problem Solving</title>
 </head>
 <body>
@@ -15,13 +16,14 @@
     <div class="content">
         <div class="plain-english">
             <h2>Write in plain English</h2>
-            <textarea></textarea><br>
+            <textarea id="plain-english" placeholder="Click here to type"></textarea><br>
             <input id="interface" type="checkbox">
             <label for="interface">Do you need an interface?</label>
         </div>
+        
         <div class="inputs">
             <h2>What are the inputs?</h2>
-            <textarea></textarea><br>
+            <textarea id="inputs"></textarea><br>
             <input id="interface" type="checkbox">
             <label for="interface">Is the entered by the user?</label>
         </div>
@@ -30,18 +32,18 @@
 
         <div class="desired-output">
             <h2>What's the desired output?</h2>
-            <textarea></textarea>
+            <textarea id="desired-output"></textarea>
         </div>
 
         <div class="steps-to-output">
             <h2>What are the steps to return desired output?</h2>
-            <textarea></textarea>
+            <textarea id="steps-to-output"></textarea>
         </div>
     </div>
 
-    <div class="btn">
-        <button>Clear</button>
-        <button>Create Notes</button>
+    <div class="btn">   
+        <button onclick="clearText()">Clear</button>
+        <button onclick="createNotes()">Create Notes</button>
     </div>
 
     
