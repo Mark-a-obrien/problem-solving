@@ -67,7 +67,17 @@ button {
     margin-top: 50px;
 }
 
+
+/* notes */
+
+.notes {
+    border: 3px solid black;
+    margin: 30px;
+}
+
+
 /* footer */
+
 .footer {
     margin-top: 40px;
     text-align: center;

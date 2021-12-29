@@ -23,8 +23,8 @@
         
         <div class="inputs">
             <h2>What are the inputs?</h2>
-            <textarea id="inputs"></textarea><br>
-            <input id="interface" type="checkbox">
+            <textarea id="inputs" placeholder="Click here to type"></textarea><br>
+            <input id="entered-by-user" type="checkbox">
             <label for="interface">Is the entered by the user?</label>
         </div>
 
@@ -32,18 +32,21 @@
 
         <div class="desired-output">
             <h2>What's the desired output?</h2>
-            <textarea id="desired-output"></textarea>
+            <textarea id="desired-output" placeholder="Click here to type"></textarea>
         </div>
 
         <div class="steps-to-output">
-            <h2>What are the steps to return desired output?</h2>
-            <textarea id="steps-to-output"></textarea>
+            <h2>The steps to return desired output</h2>
+            <textarea id="steps-to-output" placeholder="Click here to type"></textarea>
         </div>
     </div>
 
     <div class="btn">   
         <button onclick="clearText()">Clear</button>
         <button onclick="createNotes()">Create Notes</button>
+    </div>
+
+    <div id="notes" class="notes">
     </div>
 
     
